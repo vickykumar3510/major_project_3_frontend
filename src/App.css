@@ -1,0 +1,425 @@
+.container{
+  margin: 1rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.owner-list {
+  color: #2A9A2A;
+  font-weight: 600;
+}
+
+.flexBoxes{
+  display: flex;
+  gap: 10rem;
+}
+
+.flexBoxesSetting{
+  display: flex;
+  gap: 4rem;
+}
+
+.removeLine{
+  text-decoration: none;
+}
+
+/* for task name details */
+.task-name {
+  font-weight: 600;
+  color: #0a58ca;
+}
+
+.task-name-noHover {
+  font-weight: 600;
+  color: #0a58ca;
+}
+
+.task-name::after {
+  content: "Click for details";
+  position: absolute;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.task-name:hover::after {
+  opacity: 1;
+}
+
+/* for project name details */
+
+.project-name {
+  font-weight: 600;
+  color: #9A2A2A;
+}
+
+.project-name-noHover {
+  font-weight: 600;
+  color: #9A2A2A;
+}
+
+.project-name::after {
+  content: "Click for details";
+  position: absolute;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.project-name:hover::after {
+  opacity: 1;
+}
+
+/**/
+
+.team-name {
+  font-weight: 600;
+  color: #622A9A;
+}
+
+.company-name {
+  color: #191970;
+}
+
+.box-format {
+  border-color: gray;
+  border-width: 1px;
+  height: 20px;
+}
+
+.btn {
+  background-color: lightblue;
+  border-color: lightblue;
+  border-radius: 12px;
+}
+
+.btn:hover{
+  background-color: greenyellow
+}
+
+.signUpBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+}
+
+.forALine {
+  text-align: center;
+}
+
+.logOutBtn {
+  background-color: black;
+  color: red;
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.logOutBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.deletBtn {
+  background-color: lightcoral;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.deletBtn:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.form-Btn {
+  background-color: lightslategrey;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.form-Btn:hover {
+  background-color: black;
+}
+
+.line-txt {
+  color: yellow;
+}
+
+.submit-btn {
+  color: black;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+.rest-btn {
+  color: black;
+  background-color: lightcyan;
+  padding: 5px;
+}
+
+.rest-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/*bg color pages*/
+
+.signUp-bg {
+  background-color: #FFE4E1;
+}
+
+.login-bg {
+  background-color: #DAA520;
+}
+
+.dashboard-bg {
+  background-color: #DEB887;
+}
+
+.formPg-bg {
+  background-color: #FFA07A;
+}
+
+.all-Projects-bg {
+  background-color: #D2B48C;
+}
+
+.team-management-bg {
+  background-color: #FFE4E1;
+}
+
+.reports-bg {
+  background-color: #D8BFD8;
+}
+
+.settings-bg {
+  background-color: khaki;
+}
+
+.project-management-bg {
+  background-color: #FFA500;
+}
+
+.task-details-bg {
+  background-color: #FFFACD;
+}
+
+.signUp-bg,
+.login-bg,
+.dashboard-bg,
+.formPg-bg,
+.all-Projects-bg, 
+.team-management-bg, 
+.reports-bg,
+.settings-bg, 
+.project-management-bg, 
+.task-details-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.4rem 0;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.7;
+}
+
+h3 {
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+}
+
+.hrLine {
+  border: none;            
+  height: 2px;               
+  background-color: grey;
+  margin: 1.5rem 0;       
+}
+
+.sidebarCSS {
+  background-color: whitesmoke;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  width: 150px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+/*project, team box*/
+
+.rowBox {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid blueviolet;
+  border-radius: 6px;
+  margin: 0.3rem 0;
+}
+
+/*task box*/
+
+.taskRowBox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.4rem 0.6rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 0.3rem 0;
+}
+
+.miniBox {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.85rem;
+  background-color: lightgrey;
+}
+
+/*dropdown*/
+
+.simpleFilter {
+  margin-top: 1rem;
+}
+
+.simpleFilter label {
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+.simpleFilter select {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+
+/*reports page*/
+
+.reports-bg {
+  background: linear-gradient(135deg, #eef2ff, #f0fdf4);
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+/*delete btn settings page*/
+
+.task-name-noHover,
+.team-name,
+.project-name-noHover,
+.owner-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/*form*/
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-row label {
+  width: 100px;
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/*loading message*/
+
+.loader-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid #e5e7eb;
+  border-top: 4px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loginPgCenter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

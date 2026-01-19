@@ -29,7 +29,7 @@ export const TagProvider = ({ children }) => {
     }
   };
 
-  // ✅ Add new tag (FIXED)
+  //Add new tag 
   const addTag = async (tagData) => {
     try {
       setLoading(true);
@@ -56,10 +56,10 @@ export const TagProvider = ({ children }) => {
 
       setTags((prev) => [...prev, createdTag]);
 
-      return createdTag; // ⭐ IMPORTANT
+      return createdTag; 
     } catch (error) {
       console.error("Add tag failed:", error);
-      throw error; // allow UI to handle error
+      throw error; 
     } finally {
       setLoading(false);
     }

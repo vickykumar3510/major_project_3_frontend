@@ -19,7 +19,7 @@ function App() {
     })
 
     const loginData = await loginAuth.json()
-    console.log(loginData)
+    
 
     if(loginAuth.ok){
       localStorage.setItem('adminToken', loginData.token)

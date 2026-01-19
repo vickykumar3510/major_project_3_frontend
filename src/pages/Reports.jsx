@@ -17,16 +17,16 @@ const Reports = () => {
         setLoading(true);
 
         const workDoneRes = await fetch(
-          "https://major-project3-backend.vercel.app/reports/work-done-last-week"
+          "https://major-project-3-backend.vercel.app/reports/work-done-last-week"
         );
         const pendingRes = await fetch(
-          "https://major-project3-backend.vercel.app/reports/pending-work-days"
+          "https://major-project-3-backend.vercel.app/reports/pending-work-days"
         );
         const teamRes = await fetch(
-          "https://major-project3-backend.vercel.app/reports/tasks-closed-by-team"
+          "https://major-project-3-backend.vercel.app/reports/tasks-closed-by-team"
         );
         const ownerRes = await fetch(
-          "https://major-project3-backend.vercel.app/reports/tasks-closed-by-owner"
+          "https://major-project-3-backend.vercel.app/reports/tasks-closed-by-owner"
         );
 
         const workDoneData = await workDoneRes.json();

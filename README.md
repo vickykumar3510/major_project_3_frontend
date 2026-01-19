@@ -14,8 +14,8 @@ Password -
 ## Quick Start
 
 ```
-git clone "add git code link here of fronted"
-cd <majorProject3_Frontend>
+git clone "https://github.com/vickykumar3510/major_project_3_frontend.git"
+cd <major_project_3_frontend.git>
 npm install
 npm run dev
 ```

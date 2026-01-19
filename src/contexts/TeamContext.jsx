@@ -9,7 +9,7 @@ export const TeamProvider = ({ children }) => {
   // Fetch all teams
   const fetchTeams = async () => {
     try {
-      const res = await fetch("https://major-project3-backend.vercel.app/teams");
+      const res = await fetch("https://major-project-3-backend.vercel.app/teams");
       if (!res.ok) throw new Error("Failed to fetch teams");
 
       const data = await res.json();
@@ -24,7 +24,7 @@ export const TeamProvider = ({ children }) => {
   // Add a new team
   const addTeam = async (teamData) => {
     try {
-      const res = await fetch("https://major-project3-backend.vercel.app/teams", {
+      const res = await fetch("https://major-project-3-backend.vercel.app/teams", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(teamData),

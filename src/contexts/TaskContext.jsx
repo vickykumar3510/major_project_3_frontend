@@ -9,7 +9,7 @@ export const TaskProvider = ({ children }) => {
   // Fetch all tasks
   const fetchTasks = async () => {
     try {
-      const res = await fetch("https://major-project3-backend.vercel.app/tasks");
+      const res = await fetch("https://major-project-3-backend.vercel.app/tasks");
       const data = await res.json();
       setTasks(Array.isArray(data) ? data : []);
 
@@ -27,7 +27,7 @@ const addTask = async (taskData) => {
   try {
     setLoading(true);
 
-    await fetch("https://major-project3-backend.vercel.app/tasks", {
+    await fetch("https://major-project-3-backend.vercel.app/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const addTask = async (taskData) => {
   // UPDATE TASK STATUS
   const updateTaskStatus = async (taskId, status) => {
     try {
-      const res = await fetch(`https://major-project3-backend.vercel.app/tasks/${taskId}`, {
+      const res = await fetch(`https://major-project-3-backend.vercel.app/tasks/${taskId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

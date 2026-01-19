@@ -8,7 +8,7 @@ export const OwnerProvider = ({children}) => {
 
     const fetchOwner = async () => {
         try{
-            const res = await fetch('https://major-project3-backend.vercel.app/users')
+            const res = await fetch('https://major-project-3-backend.vercel.app/users')
             const data = await res.json()
           
             setOwners(data)

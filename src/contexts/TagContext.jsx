@@ -12,7 +12,7 @@ export const TagProvider = ({ children }) => {
       setLoading(true);
 
       const res = await fetch(
-        "https://major-project3-backend.vercel.app/tags"
+        "https://major-project-3-backend.vercel.app/tags"
       );
 
       if (!res.ok) {
@@ -35,7 +35,7 @@ export const TagProvider = ({ children }) => {
       setLoading(true);
 
       const res = await fetch(
-        "https://major-project3-backend.vercel.app/tags",
+        "https://major-project-3-backend.vercel.app/tags",
         {
           method: "POST",
           headers: {

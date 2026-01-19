@@ -8,7 +8,7 @@ export const ProjectProvider = ({ children }) => {
 
   const fetchProjects = async () => {
     try {
-      const res = await fetch("https://major-project3-backend.vercel.app/projects")
+      const res = await fetch("https://major-project-3-backend.vercel.app/projects")
       const data = await res.json()
       setProjects(data)
     } catch (error) {
@@ -20,7 +20,7 @@ export const ProjectProvider = ({ children }) => {
 
   const addProject = async (projectData) => {
   try {
-    const res = await fetch("https://major-project3-backend.vercel.app/projects", {
+    const res = await fetch("https://major-project-3-backend.vercel.app/projects", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(projectData)

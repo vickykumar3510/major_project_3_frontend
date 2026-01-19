@@ -15,7 +15,7 @@ const Settings = () => {
 
   const handleDeleteTask = async(id) => {
     try{
-        const res = await fetch(`https://major-project3-backend.vercel.app/tasks/${id}`, {
+        const res = await fetch(`https://major-project-3-backend.vercel.app/tasks/${id}`, {
         method: "DELETE",
         })
         if(res.ok){
@@ -31,7 +31,7 @@ const Settings = () => {
 
     const handleDeleteTeam = async(id) => {
     try{
-        const res = await fetch(`https://major-project3-backend.vercel.app/teams/${id}`, {
+        const res = await fetch(`https://major-project-3-backend.vercel.app/teams/${id}`, {
         method: "DELETE",
         })
         if(res.ok){
@@ -47,7 +47,7 @@ const Settings = () => {
 
     const handleDeleteProject = async(id) => {
     try{
-        const res = await fetch(`https://major-project3-backend.vercel.app/projects/${id}`, {
+        const res = await fetch(`https://major-project-3-backend.vercel.app/projects/${id}`, {
         method: "DELETE",
         })
         if(res.ok){

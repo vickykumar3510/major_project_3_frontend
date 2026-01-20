@@ -45,21 +45,38 @@ const Settings = () => {
     }
   }
 
-    const handleDeleteProject = async(id) => {
-    try{
-        const res = await fetch(`https://major-project-3-backend.vercel.app/projects/${id}`, {
-        method: "DELETE",
-        })
-        if(res.ok){
-            setProjects((prev) => prev.filter((project) => project._id !== id))
-            toast.success("Project Deleted Successfully.");
-        }
+const handleDeleteProject = async (id) => {
+  // ✅ OPTIONAL safety confirmation
+  const confirmDelete = window.confirm(
+    "Deleting this project will also delete all related tasks. Continue?"
+  )
+  if (!confirmDelete) return
 
-    }catch(error){
-        console.log("Failed to delete project", error)
-        toast.error("Failed to delete project");
+  try {
+    const res = await fetch(
+      `https://major-project-3-backend.vercel.app/projects/${id}`,
+      { method: "DELETE" }
+    )
+
+    if (res.ok) {
+      // ✅ 1️⃣ REMOVE PROJECT FROM PROJECT CONTEXT
+      setProjects(prev =>
+        prev.filter(project => project._id !== id)
+      )
+
+      // ✅ 2️⃣ REMOVE ALL TASKS BELONGING TO THIS PROJECT
+      setTasks(prev =>
+        prev.filter(task => task.project !== id)
+      )
+
+      toast.success("Project and related tasks deleted successfully.")
     }
+  } catch (error) {
+    console.log("Failed to delete project", error)
+    toast.error("Failed to delete project")
   }
+}
+
  
 
   return (

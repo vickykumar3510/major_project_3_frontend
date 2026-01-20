@@ -34,7 +34,7 @@ const Dashboard = () => {
     <p>Loading...</p>
   </div>
 )}
-                <h1>Dashboard</h1>
+<h1>Dashboard</h1>
 
                 <div className='flexBoxes'>
                     <div className='sidebarCSS'>

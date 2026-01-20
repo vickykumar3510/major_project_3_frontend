@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import TeamContext from "../contexts/TeamContext";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const NewTeamForm = () => {
+  const navigate = useNavigate()
   const { addTeam, loading } = useContext(TeamContext);
 
   const [name, setName] = useState("");
@@ -14,6 +16,7 @@ const NewTeamForm = () => {
     e.preventDefault();
 
     await addTeam({ name, description });
+    navigate('/teammanagement')
     toast.success("New Team created.");
 
     setName("");

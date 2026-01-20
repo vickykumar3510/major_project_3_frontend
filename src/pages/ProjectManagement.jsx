@@ -82,7 +82,7 @@ const ProjectManagement = () => {
             ) : (
               <>
                 <h1>
-                  Project: <span style={{ color: "#9A2A2A" }}>{selectedProject.name}</span>
+                  Project: <span style={{ color: "#9A2A2A"}}>{selectedProject.name}</span>
                 </h1>
 
                 <div className="flexBoxes">

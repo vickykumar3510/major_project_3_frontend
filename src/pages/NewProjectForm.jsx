@@ -3,8 +3,10 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import ProjectContext from "../contexts/ProjectContext"
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const NewProjectForm = () => {
+  const navigate = useNavigate()
   const { addProject, loading } = useContext(ProjectContext)
   const [name, setName] = useState("")
   const [description, setDescription] = useState("")
@@ -13,6 +15,7 @@ const NewProjectForm = () => {
     e.preventDefault()
 
     await addProject({ name, description })
+    navigate('/allprojects')
     toast.success("New Project created.");
 
     setName("")

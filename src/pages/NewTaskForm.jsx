@@ -7,8 +7,10 @@ import TagContext from "../contexts/TagContext";
 import ProjectContext from "../contexts/ProjectContext";
 import TaskContext from "../contexts/TaskContext";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const NewTaskForm = () => {
+  const navigate = useNavigate()
   const { teams } = useContext(TeamContext);
   const { projects, loading } = useContext(ProjectContext);
   const { owners } = useContext(OwnerContext);
@@ -103,6 +105,7 @@ const NewTaskForm = () => {
       project,
     });
 
+    navigate('/dashboard')
     toast.success("New Task created");
     resetForm();
   };

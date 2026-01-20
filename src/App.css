@@ -1,5 +1,5 @@
-.container{
-  margin: 1rem;
+.container {
+  margin: 1rem 1rem 1rem 5rem;
 }
 
 html, body {
@@ -24,12 +24,12 @@ ul {
 
 .flexBoxes{
   display: flex;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .flexBoxesSetting{
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .removeLine{
@@ -259,7 +259,8 @@ ul {
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
-  justify-content: center;
+  /*justify-content: flex-start*/
+  align-items: center;
   padding: 1rem 0;
 }
 
@@ -305,6 +306,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   border: 1px solid gray;
+
 }
 /*project, team box*/
 

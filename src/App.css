@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 
 ul {
@@ -97,6 +98,15 @@ ul {
 }
 
 /**/
+
+
+.pieChart {
+  width: 420px;
+}
+
+.barChart {
+  width: 420px;
+}
 
 .team-name {
   font-weight: 600;
@@ -247,6 +257,7 @@ ul {
 .project-management-bg, 
 .task-details-bg {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   padding: 1rem 0;
@@ -422,4 +433,173 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+/* media query for mobile responsive*/
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 0.90rem;
+  }
+
+  .btn, .form-Btn, .submit-btn, .rest-btn, .logOutBtn {
+    padding: 3px;
+    font-size: 10px;
+  }
+
+  .flexBoxes{
+  display: flex;
+  gap: 3rem;
+  font-size: 12px;
+}
+
+.flexBoxesSetting{
+  display: flex;
+  gap: 2rem;
+  font-size: 12px;
+}
+
+  .sidebarCSS {
+    padding: 0.5rem;
+    display: flex;
+    gap: 2px;
+    width: 75px;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .rowBox {
+  padding: 0.2rem 0.3rem;
+  margin: 0.3rem 0;
+  font-size: 12px;
+}
+
+.taskRowBox {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.3rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin: 0.2rem 0;
+  font-size: 12px;
+}
+
+.loader-container {
+  font-size: 12px;
+}
+
+.miniBox {
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  padding: 0.1rem 0.3rem;
+  font-size: 12px;
+  background-color: lightgrey;
+}
+
+.project-name-noHover {
+  color: #9A2A2A;
+  font-size: 12px;
+}
+
+.project-name {
+  color: #9A2A2A;
+  font-size: 12px;
+}
+
+.simpleFilter {
+  margin-top: 0.5rem;
+}
+
+.simpleFilter label {
+  margin-right: 0.3rem;
+  font-size: 14px;
+}
+
+.deletBtn {
+  font-size: 10px;
+  padding: 2px;
+}
+
+.simpleFilter select {
+  padding: 0.10rem 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  width: 70px;
+}
+.pieChart {
+  width: 220px;
+}
+
+.barChart {
+  width: 220px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.form-row label {
+  width: 100px;
+  font-size: 15px;
+  padding-top: 4px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+  padding: 4px 5px;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.flexBoxesSetting > .flexBoxesSetting {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.settings-bg
+ {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: stretch;
+}
+
+}
+
+@media(min-width: 480px){
+  .flexBoxesSetting > .flexBoxesSetting {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.settings-bg
+ {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: stretch;
+}
 }

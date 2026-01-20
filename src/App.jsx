@@ -45,7 +45,7 @@ function App() {
         </div>
         <div className='form-row'>
         <label htmlFor="password">Password:</label><br/>
-        <input type="password" id="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/><br/><br/><br/>
+        <input type="text" id="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/><br/><br/><br/>
         </div>
         <div>
         <button className='btn' onClick={loginHandler}>Sign In</button>

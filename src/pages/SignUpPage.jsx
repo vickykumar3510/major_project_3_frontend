@@ -38,7 +38,7 @@ const SignUpPage = () => {
             </div>
             <div className='form-row'>
             <label htmlFor="password">Password:</label>
-            <input className='box-format' type="password" id="password" placeholder='create password' value={password} onChange={(e) => setPassword(e.target.value)}/><br/><br/><br/>
+            <input className='box-format' type="text" id="password" placeholder='create password' value={password} onChange={(e) => setPassword(e.target.value)}/><br/><br/><br/>
             </div>
             <button className='btn' onClick={accountHandler} disabled={!name || !password || !email}>Create account</button>{" "}<br/><br/>
             

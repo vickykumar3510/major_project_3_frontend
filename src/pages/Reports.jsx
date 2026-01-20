@@ -136,7 +136,7 @@ const Reports = () => {
               {totalTeamClosed}
             </p>
 
-            <div style={{ width: "420px", marginBottom: "30px" }}>
+            <div className='barChart' style={{marginBottom: "30px" }}>
               <Bar data={teamChartData} />
             </div>
 
@@ -147,7 +147,7 @@ const Reports = () => {
               {totalOwnerClosed}
             </p>
 
-            <div style={{ width: "420px" }}>
+            <div className='pieChart'>
               <Pie data={ownerChartData} />
             </div>
           </div>

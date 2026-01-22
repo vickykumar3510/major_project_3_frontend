@@ -25,6 +25,7 @@ const NewTeamForm = () => {
 
   return (
     <div className="formPg-bg">
+      <h1 className='page-title'>New Team Form</h1>
       <main className="container">
         {loading && (
   <div className="loader-container">
@@ -32,7 +33,7 @@ const NewTeamForm = () => {
     <p>Loading...</p>
   </div>
 )}
-        <h1>New Team Form</h1>
+        
         
         <div className="flexBoxes">
           <div className="sidebarCSS">

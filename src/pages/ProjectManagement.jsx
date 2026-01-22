@@ -69,6 +69,9 @@ const ProjectManagement = () => {
 
   return (
     <div className="project-management-bg">
+      <h1 className='page-title'>
+                  Project: <span style={{ color: "#9A2A2A"}}>{selectedProject.name}</span>
+                </h1>
       <main className='container'>
         {loading ? (
           <div className="loader-container">
@@ -81,10 +84,6 @@ const ProjectManagement = () => {
               <p>Project not found.</p>
             ) : (
               <>
-                <h1>
-                  Project: <span style={{ color: "#9A2A2A"}}>{selectedProject.name}</span>
-                </h1>
-
                 <div className="flexBoxes">
                   
                   <div className='sidebarCSS'>

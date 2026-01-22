@@ -112,6 +112,7 @@ const NewTaskForm = () => {
 
   return (
     <div className="formPg-bg">
+      <h1 className='page-title'>New Task Form</h1>
       <main className="container">
         {loading && (
           <div className="loader-container">
@@ -120,7 +121,7 @@ const NewTaskForm = () => {
           </div>
         )}
 
-        <h1>New Task Form</h1>
+        
 
         <div className="flexBoxes">
           <div className="sidebarCSS">

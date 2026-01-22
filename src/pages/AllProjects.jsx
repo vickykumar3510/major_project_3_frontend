@@ -43,6 +43,7 @@ const AllProjects = () => {
 
   return (
     <div className='all-Projects-bg'>
+      <h1 className='page-title'>List of all Projects</h1>
       <main className='container'>
         {loading && (
   <div className="loader-container">
@@ -51,7 +52,7 @@ const AllProjects = () => {
   </div>
 )}
 
-        <h1>List of all Projects</h1>
+        
 
         <div className='flexBoxes'>
           {/* Sidebar */}

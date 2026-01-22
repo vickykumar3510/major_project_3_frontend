@@ -46,7 +46,7 @@ const Settings = () => {
   }
 
 const handleDeleteProject = async (id) => {
-  // ✅ OPTIONAL safety confirmation
+  //OPTIONAL safety confirmation
   const confirmDelete = window.confirm(
     "Deleting this project will also delete all related tasks. Continue?"
   )
@@ -59,12 +59,12 @@ const handleDeleteProject = async (id) => {
     )
 
     if (res.ok) {
-      // ✅ 1️⃣ REMOVE PROJECT FROM PROJECT CONTEXT
+      //REMOVE PROJECT FROM PROJECT CONTEXT
       setProjects(prev =>
         prev.filter(project => project._id !== id)
       )
 
-      // ✅ 2️⃣ REMOVE ALL TASKS BELONGING TO THIS PROJECT
+      //REMOVE ALL TASKS BELONGING TO THIS PROJECT
       setTasks(prev =>
         prev.filter(task => task.project !== id)
       )
@@ -81,6 +81,7 @@ const handleDeleteProject = async (id) => {
 
   return (
     <div className='settings-bg'>
+      <h1 className='page-title'>Manage Data</h1>
       <main className='container'>
         {loading && (
   <div className="loader-container">
@@ -88,7 +89,7 @@ const handleDeleteProject = async (id) => {
     <p>Loading...</p>
   </div>
 )}
-        <h1>Manage Data</h1>
+        
 
         <div className='flexBoxesSetting'>
           <div className='sidebarCSS'>

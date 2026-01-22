@@ -27,6 +27,7 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard-bg'>
+            <h1 className='page-title'>Dashboard</h1>
             <main className='container'>
                 {loading && (
   <div className="loader-container">
@@ -34,8 +35,6 @@ const Dashboard = () => {
     <p>Loading...</p>
   </div>
 )}
-<h1>Dashboard</h1>
-
                 <div className='flexBoxes'>
                     <div className='sidebarCSS'>
                         <h3>Sidebar</h3>

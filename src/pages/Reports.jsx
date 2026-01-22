@@ -94,6 +94,7 @@ const Reports = () => {
 
   return (
     <main className="reports-bg">
+      <h1 className='page-title'>Workasana Reports</h1>
       <div className="container">
                 {loading && (
   <div className="loader-container">
@@ -101,7 +102,7 @@ const Reports = () => {
     <p>Loading...</p>
   </div>
 )}
-        <h1>Workasana Reports</h1>
+        
         <div className="flexBoxes">
           {/* Sidebar */}
           <div className="sidebarCSS">

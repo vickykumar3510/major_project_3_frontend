@@ -1,5 +1,5 @@
 .container {
-  margin: 1rem 1rem 1rem 5rem;
+  margin: 7rem 1rem 1rem 5rem;
 }
 
 html, body {
@@ -260,8 +260,17 @@ ul {
   min-height: 100dvh;
   display: flex;
   /*justify-content: flex-start*/
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem 0;
+}
+
+.signUp-bg,
+.login-bg {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 ul {
@@ -273,11 +282,31 @@ ul li {
   margin: 0.4rem 0;
 }
 
-h1 {
+/*h1 {
   margin-bottom: 1.5rem;
   font-style: italic;
   text-align: center;
   opacity: 0.7;
+}*/
+
+h1 {
+  position: relative;
+  left: 50vw;
+  transform: translateX(-50%);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.page-title {
+  position: absolute;
+  top: 2rem; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  opacity: 0.7;
+  z-index: 10;
+  
 }
 
 h3 {
@@ -441,12 +470,28 @@ h2 {
 
 @media (max-width: 480px) {
   .container {
-    margin: 0.5rem;
-  }
+  margin: 3.5rem 0.5rem 0.5rem 3rem;
+}
 
   h1 {
     font-size: 1.2rem;
+      position: relative;
+  left: 50vw;
+  transform: translateX(-50%);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  opacity: 0.7;
   }
+
+  .page-title {
+  position: absolute;
+  top: 1rem; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  opacity: 0.7;
+  z-index: 10;
+}
 
   h2 {
     font-size: 1rem;
@@ -579,13 +624,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-.settings-bg
- {
-  min-height: 100vh;
-  min-height: 100dvh;
-  display: flex;
-  justify-content: stretch;
-}
 
 }
 

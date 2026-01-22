@@ -8,6 +8,7 @@ const TeamManagement = () => {
 
   return (
     <div className="team-management-bg">
+       <h1 className='page-title'>Teams Management</h1>
       <main className='container'>
         {loading && (
   <div className="loader-container">
@@ -15,7 +16,7 @@ const TeamManagement = () => {
     <p>Loading...</p>
   </div>
 )}
-        <h1>Teams Management</h1>
+       
 
         <div className="flexBoxes">
           <div className='sidebarCSS'>

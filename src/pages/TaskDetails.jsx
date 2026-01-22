@@ -51,8 +51,9 @@ const TaskDetails = () => {
 
     return (
         <div className="task-details-bg">
+            <h1 className='page-title'>Task: <span style={{"color" : "#0a58ca"}}>{task.name}</span></h1>
             <main className='container'>
-                <h1>Task: <span style={{"color" : "#0a58ca"}}>{task.name}</span></h1>
+                
 
                 <div className="flexBoxes">
                     <div className='sidebarCSS'>

@@ -24,8 +24,8 @@ const SignUpPage = () => {
     return(
         <>
         <main className='signUp-bg'>
-        <div className='conatiner loginPgCenter'>
-            <h1 className='company-name'>Welcome to workasana</h1>
+        <div className='loginPgCenter'>
+            <p className='company-name' style={{fontSize: "30px"}}>Welcome to workasana</p>
             <p style={{"color" : "red"}}>Please fill the below details to create your account</p><br/>
             <section>
                 <div className='form-row'>

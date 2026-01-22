@@ -34,8 +34,8 @@ function App() {
   return (
     
     <main className='login-bg'>
-      <div className='container loginPgCenter'>
-        <h1 className='company-name'>workasana</h1>
+      <div className='loginPgCenter'>
+        <p className='company-name' style={{fontSize: "30px"}}>workasana</p>
         <h3 style={{"color" : "blue"}}>Log in to your account</h3>
         <p>Please enter your details</p>
         <div className=''>

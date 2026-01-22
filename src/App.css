@@ -115,6 +115,9 @@ ul {
 
 .company-name {
   color: #191970;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
 }
 
 .box-format {
@@ -270,7 +273,7 @@ ul {
   min-height: 100dvh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 ul {
@@ -281,13 +284,6 @@ ul {
 ul li {
   margin: 0.4rem 0;
 }
-
-/*h1 {
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  text-align: center;
-  opacity: 0.7;
-}*/
 
 h1 {
   position: relative;
@@ -463,7 +459,9 @@ h2 {
 .loginPgCenter {
   display: flex;
   flex-direction: column;
+  align-items: center;  
   text-align: center;
+  margin-bottom: 150px;
 }
 
 /* media query for mobile responsive*/
